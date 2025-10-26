@@ -1,0 +1,102 @@
+.contenedor {
+  gap: 40px;
+  background-color: rgb(245, 198, 104);
+  padding: 60px 40px;
+  border-radius: 40px;
+  box-shadow: 0 0 30px rgba(255, 140, 0, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 140, 0, 0.15);
+}
+
+.minicontain h1 {
+  color: #0b0b0b;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px rgba(228, 113, 5, 0.4);
+}
+
+.minicontain p {
+  color: #0f0f0f;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+}
+
+
+.imagen {
+  width: 30%;          
+  height: auto;         
+  border-radius: 15px;  
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);     
+  transition: transform 0.3s; 
+}
+
+.imagen:hover {
+  transform: scale(1.05);
+}
+
+.botonesContainer {
+  display: flex;
+  gap: 15px;        /* Espacio entre botones */
+  margin-top: 20px; /* Separación del texto */
+}
+
+.boton {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #0051a3;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas: imagen y texto */
+  align-items: center;            /* Centra verticalmente ambos elementos */
+  gap: 40px;                      /* Espacio entre la imagen y el texto */
+  padding: 40px;
+}
+
+.imagen {
+  width: 100%;    
+
+  border-radius: 10px;
+  object-fit: cover; /* Mantiene proporción y recorta si es necesario */
+}
+
+.minicontain {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  margin-bottom: 20px; /* separa el texto de los botones */
+}
+
+.botonesContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.boton {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #0051a3;
+}

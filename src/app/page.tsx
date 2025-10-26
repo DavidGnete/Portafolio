@@ -17,7 +17,7 @@ export default function Home() {
 
     
     setTimeout(() => {
-      router.push("/about"); 
+      router.push("/inicio"); 
     }, 1000); // duración de la animación
   };
 
@@ -38,7 +38,7 @@ export default function Home() {
               exit={{ scale: 10, opacity: 1 }}
               transition={{ duration: 1, ease: "easeInOut" }}
             >
-              <FoxLogo />
+              <FoxLogo className=""/>
             </motion.div>
           )}
         </AnimatePresence>

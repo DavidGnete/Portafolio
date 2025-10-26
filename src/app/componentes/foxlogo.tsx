@@ -2,29 +2,33 @@
 import { useEffect, useRef } from "react";
 import type { NextPage } from "next";
 // @ts-ignore
-
 import createMetamaskLogo from "@metamask/logo";
 
-interface FoxlogoProp{
-    className?:string;
+interface FoxlogoProp {
+  className?: string;
 }
 
-
-const FoxLogo: NextPage<FoxlogoProp> = ({className}) => {
+const FoxLogo: NextPage<FoxlogoProp> = ({ className }) => {
   const ref = useRef<HTMLDivElement>(null);
+  const hasMounted = useRef(false); // ⚡ flag de inicialización
 
   useEffect(() => {
+    if (hasMounted.current || !ref.current) return; // evita doble inicialización
+    hasMounted.current = true;
+
+    // ⚡ Limpiar canvas previo por si acaso
+    const existingCanvas = ref.current.querySelector("canvas");
+    if (existingCanvas) ref.current.removeChild(existingCanvas);
+
     const viewer = createMetamaskLogo({
       pxNotRatio: true,
-      width: 300,
-      height: 300,
+      width: { className },
+      height: { className },
       followMouse: true,
       slowDrift: false,
     });
 
-    if (ref.current) {
-      ref.current.appendChild(viewer.container);
-    }
+    ref.current.appendChild(viewer.container);
 
     return () => {
       viewer.stopAnimation();
@@ -34,7 +38,8 @@ const FoxLogo: NextPage<FoxlogoProp> = ({className}) => {
     };
   }, []);
 
-  return <div ref={ref} className={className}/>;
+  return <div ref={ref} className={className} />;
 };
 
 export default FoxLogo;
+

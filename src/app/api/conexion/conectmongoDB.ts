@@ -8,7 +8,7 @@ if (!Mongo_URL) throw new Error(" mistake in url");
 export async function MongoConect() {
   try {
     if (mongoose.connection.readyState === 0) {
-      await mongoose.connect(Mongo_URL);
+      await mongoose.connect(Mongo_URL!);
       console.log("conect to mongoDB");
     }
   } catch (error) {

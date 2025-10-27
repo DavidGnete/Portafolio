@@ -17,8 +17,8 @@ export default function Background() {
       fpsLimit: 60,
       interactivity: {
         events: {
-          onHover: { enable: true, mode: "repulse" },
-          resize: true,
+          onHover: { enable: true, mode: "repulse" as const },
+          resize: { enable: true },
         },
         modes: {
           repulse: { distance: 100, duration: 0.4 },
@@ -47,8 +47,8 @@ export default function Background() {
         move: {
           enable: true,
           speed: 1.2,
-          direction: "none",
-          outModes: "out",
+          direction: "none" as const,
+          outModes: { default: "out" as const }, // ← corregido
         },
       },
       detectRetina: true,

@@ -1,0 +1,46 @@
+{
+  "about_title": "Sobre mí",
+  "about_description": "¡Hola! Soy un desarrollador web apasionado que disfruta transformar ideas en nuevas experiencias. A lo largo de los últimos años, he trabajado con muchas tecnologías, incluyendo JavaScript, React y Next.js, aprendiendo y mejorando constantemente. También he explorado el mundo  Web3 y la blockchain, integrando pagos con criptomonedas y funciones descentralizadas en aplicaciones reales. Lo que me motiva es la oportunidad de crear algo significativo.",
+  "technologies_title": "Tecnologías Usadas",
+  "developer_tag": "</ desarrollador />",
+  "web3_title": "san luis con blockchain",
+  "web3_description": "Descubre San Luis como nunca antes con nuestra plataforma de turismo impulsada por Web3. Disfruta de pagos digitales sin fricción, seguridad blockchain e integración con billeteras mientras exploras las mejores aventuras y hoteles. ¡Una forma moderna de planificar, reservar y vivir tus viajes!",
+  "chat_title": "Chat online",
+  "chat_description": "Únete a nuestro proyecto de chat en vivo construido con Next.js y tecnología backend — ¡chatea en tiempo real con otros usuarios en el mismo servidor!",
+  "go_project": "Ir al proyecto",
+  "projects": {
+    "sanluis": {
+      "title": "Turismo Web3",
+      "description": "Visita San Luis Antioquia es un proyecto turístico innovador diseñado para promover los atractivos de San Luis, Antioquia. Integra tecnologías Web3 para pagos seguros en blockchain."
+    },
+    "chat": {
+      "title": "Aplicación de chat",
+      "description": "Chat Live es una plataforma de mensajería en tiempo real creada con Next.js y WebSocket, que permite a los usuarios chatear al instante en salas compartidas."
+    }
+  },
+  "titles": {
+    "hello": "No seas timido",
+    "contact": "Contáctame",
+    "formTitle": "Contáctame siempre que puedas"
+  },
+  "placeholders": {
+    "name": "Ingresa tu nombre",
+    "email": "Ingresa tu correo electrónico",
+    "message": "Ingresa tu mensaje"
+  },
+  "buttons": {
+    "send": "Enviar"
+  },
+  "notifications": {
+    "success": "Datos enviados correctamente",
+    "error": "Error al enviar los datos",
+    "validation": "Por favor revisa los campos requeridos"
+  },
+  "menu": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  }
+}
+

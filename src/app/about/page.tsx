@@ -1,7 +1,6 @@
 "use client";
-import Link from "next/link";
-import Cards from "../componentes/cartas";
 import styles from "../../../styles/About.module.css";
+import { useTranslation, UseTranslation } from "next-i18next";
 
 //libreria motion-iconos
 
@@ -9,31 +8,30 @@ import {color, motion, type Variants} from "framer-motion"
 import React, { ReactNode } from "react";
 import { IoLogoReact,IoLogoHtml5,IoLogoJavascript,IoLogoCss3 } from "react-icons/io5";
 import Image from "next/image";
-import Background from "../componentes/fondo";
+
 
 
 export default function About (){
+const { t } = useTranslation("common");
+
     return (
     <main>
     <div className={styles.contenedor}>
-        <Cards img="/me.jpeg" name="Me" link="">
+        <div className={styles.imageCard}>
+        <img src="/me.jpeg" alt="Me" className={styles.image}/>
+        <p className={styles.devTag}>{t("developer_tag")}</p>
+</div>
+
         
-        </Cards>
 
         <div className={styles.minicontain}>
-        <h1 className="font-serif text-4xl font-bold">About Me</h1>
+        <h1 className="font-serif text-4xl font-bold">{t("about_title")}</h1>
 
-        <p>This is about me, my historie, how i can continue alearning about all my enviarioment and is true
-            in this moment is a moment of difficultd, but no is the end, i will study every day all the days
-            i promes me to finish this year different to the other year, i will cumple my goal, i wiil do exercise
-            meditation, read, and be the best programing, do my better way, and tri to be the best programing, and just
-            i can do it spending around of 10 or 12 hour every day, reading, drwaing, and watching tutorial,
-            i will be in mod hardcord the rest of this year !!!
-        </p>
+    <p>{t("about_description")}</p>
         </div>
     </div>
     <div className={styles.titulo}>
-        <h1 className="text-5xl font-bond">Tecnologies</h1>
+        <h1>{t("technologies_title")}</h1>
     </div>
     <ScrollTriggered />
     </main>
@@ -95,5 +93,4 @@ const food: [ReactNode][] = [
     [<IoLogoHtml5 color="#e66808ff" className="rounded-md" />],
     [<IoLogoJavascript color="#f6ff00ff" className="rounded-md"/>],
     [<IoLogoCss3 color="#08e6c1ff" className="bg-black/90 rounded-md"/>],
-
 ]

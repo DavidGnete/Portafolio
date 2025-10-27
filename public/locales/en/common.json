@@ -1,0 +1,52 @@
+{
+  "about_title": "About Me",
+  "about_description": "Hello! I am a passionate Web Developer who loves turning ideas into functional and visually engaging digital experiences. Over the past years, I have worked with a wide range of technologies including JavaScript, React, and Next.js, constantly learning and improving my craft. I have also explored the Web3 and blockchain ecosystem — integrating crypto payments and decentralized features into real-world applications. What drives me is the opportunity to create something meaningful.",
+  "technologies_title": "Technologies",
+  "developer_tag": "</ developer />",
+  "web3_title": "Web3 Experience",
+  "web3_description": "Discover San Luis like never before with our Web3-powered tourism platform. Enjoy seamless digital payments, blockchain security, and wallet integration while exploring top destinations. A modern way to plan, book, and experience travel!",
+  "chat_title": "Real-Time Chat Live",
+  "chat_description": "Join our live chat project built with Next.js and backend tech — chat in real time with others on the same server!",
+  "go_project": "Go project",
+
+  
+  "projects": {
+    "sanluis": {
+      "title": "Web3 Tourism Project",
+      "description": "Visita San Luis Antioquia is an innovative tourism project designed to promote the attractions of San Luis, Antioquia. It integrates Web3 technologies for secure blockchain payments."
+    },
+    "chat": {
+      "title": "Chat Live App",
+      "description": "Chat Live is a real-time messaging platform built with Next.js and WebSocket technology, allowing users to chat instantly in shared rooms."
+    }
+  },
+
+
+  "titles": {
+    "hello": "Say Me Hello",
+    "contact": "Contact Me",
+    "formTitle": "Contact me always that you can"
+  },
+  "placeholders": {
+    "name": "Enter your name",
+    "email": "Enter your email",
+    "message": "Enter your message"
+  },
+  "buttons": {
+    "send": "Send"
+  },
+  "notifications": {
+    "success": "Data sent successfully",
+    "error": "Error sending the data",
+    "validation": "Please check the required fields"
+  },
+
+  
+  "menu": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
+

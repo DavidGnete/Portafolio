@@ -38,7 +38,7 @@ export default function Home() {
               exit={{ scale: 10, opacity: 1 }}
               transition={{ duration: 1, ease: "easeInOut" }}
             >
-              <FoxLogo className=""/>
+              <FoxLogo className="w-60 h-60"/>
             </motion.div>
           )}
         </AnimatePresence>
@@ -58,11 +58,23 @@ export default function Home() {
 
 
           <div className="flex gap-9 text-3xl items-center">
-            <SiGithub className="transform transition duration-300 hover:scale-125 cursor-pointer" />
-            <SiInstagram className="transform transition duration-300 hover:scale-125 cursor-pointer" />
-            <SiFacebook className="transform transition duration-300 hover:scale-125 cursor-pointer" />
-            <SiLinkedin className="transform transition duration-300 hover:scale-125 cursor-pointer" />
-          </div>
+  <a href="https://github.com/DavidGnete" target="_blank" rel="noopener noreferrer">
+    <SiGithub className="transform transition duration-300 hover:scale-125 cursor-pointer" />
+  </a>
+
+  <a href="https://www.instagram.com/o_campodavid/" target="_blank" rel="noopener noreferrer">
+    <SiInstagram className="transform transition duration-300 hover:scale-125 cursor-pointer" />
+  </a>
+
+  <a href="https://www.facebook.com/david.agudeloocampo.3/?locale=es_LA" target="_blank" rel="noopener noreferrer">
+    <SiFacebook className="transform transition duration-300 hover:scale-125 cursor-pointer" />
+  </a>
+
+  <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
+    <SiLinkedin className="transform transition duration-300 hover:scale-125 cursor-pointer" />
+  </a>
+</div>
+
         </div>
       </div>
     </main>

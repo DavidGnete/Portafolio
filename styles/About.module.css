@@ -1,4 +1,4 @@
-/* 🌌 Contenedor principal */
+
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -12,25 +12,9 @@
   border: 1px solid rgba(255, 140, 0, 0.15);
 }
 
-/* 📸 Imagen personal */
-.foto {
-  padding: 8px;
-  border-radius: 30px;
-  width: 320px;
-  height: auto;
-  object-fit: cover;
-  box-shadow: 0 10px 25px rgba(255, 140, 0, 0.4);
-  border: 2px solid rgba(255, 140, 0, 0.7);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
-}
 
-.foto:hover {
-  transform: scale(1.07) rotate(-2deg);
-  box-shadow: 0 15px 45px rgba(255, 140, 0, 0.7);
-}
 
-/* 🧠 Contenedor del texto */
+
 .minicontain {
   display: flex;
   flex-direction: column;
@@ -68,9 +52,10 @@
   font-family: "Inter", sans-serif;
 }
 
-/* 🔠 Título de tecnologías */
+
 .titulo {
   display: flex;
+  width: 100%;
   justify-content: center;
   margin-top: 80px;
   margin-bottom: 40px;
@@ -87,19 +72,18 @@
     0 0 20px rgba(255, 140, 0, 0.3);
 }
 
-/* ⚙️ Contenedor de iconos animados */
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  padding: 60px;
   max-width: 1600px;
   margin: 0 auto;
 }
 
-/* 🧩 Cada contenedor del motion card */
+
 .cardContainer {
 
   width: 180px;
@@ -111,8 +95,6 @@
   position: relative;
   perspective: 1000px;
 }
-
-/* 💥 Fondo splash naranja */
 .splash {
   position: absolute;
   background-color: rgb(175, 180, 183);
@@ -136,7 +118,6 @@
   filter: brightness(1.4) saturate(1.5);
 }
 
-/* 🧿 Icono o contenido */
 .card {
   font-size: 85px;
   width: 150px;
@@ -162,22 +143,55 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* ✨ Responsive */
-@media (max-width: 900px) {
-  .contenedor {
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
-  }
 
-  .foto {
-    width: 250px;
-  }
-
-  .titulo h1 {
-    font-size: 2rem;
-  }
-
-  .container {
-    gap: 30px;
-  }
+.imageCard:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(255, 140, 0, 0.4);
 }
+
+.imageCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
+  border-radius: 1.2rem;
+  padding: 1rem;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(255, 140, 0, 0.25);
+  border: 1px solid rgba(255, 140, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.imageCard:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(255, 140, 0, 0.4);
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  transition: transform 0.4s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+
+.devTag {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  font-family: "Fira Code", monospace;
+  color: #ff9f43;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 159, 67, 0.5);
+  transition: text-shadow 0.3s ease;
+}
+
+.devTag:hover {
+  text-shadow: 0 0 20px rgba(255, 159, 67, 0.9);
+}
+
